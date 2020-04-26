@@ -4,6 +4,8 @@ RUN mkdir -p /tmp/app
 RUN chmod 775 /tmp/app
 #WORKDIR F:/pratik/code/springboot/demo-web-application/runtime
 
+RUN mvn clean install
+
 COPY demo-web-application-1.0-SNAPSHOT.jar /tmp/app/
 
 
